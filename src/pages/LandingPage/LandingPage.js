@@ -6,7 +6,7 @@ export class LandingPage extends React.Component {
   render() {
     return (
       <div>
-        <Navbar/>
+        <Navbar currentPage='landingPage'/>
         <HomePage/>
       </div>
     )

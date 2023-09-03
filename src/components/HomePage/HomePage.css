@@ -1,28 +1,116 @@
 img {
-  height: 300px;
+  height: 270px;
   /* z-index: -1; */
 }
 
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+
 .homepage-container {
-  margin-top: 5rem;
-  background-color: rgb(230,218,206);
+  margin-top: 2rem;
+  background-color: rgba(190, 59, 59, 0.663);
   min-height: 100vh;
   width: 100%;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-.program-overview {
-  margin: 2rem;
+.program-overview,
+.assessment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  flex-shrink: 0;
+  width: 70%;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.assessment {
   text-align: center;
 }
 
-.objectives {
-  width: 90%;
+.program-overview-heading,
+.assessment-heading {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  margin: 0 2rem;
+}
+
+.program-overview-heading_square,
+.assessment-heading_square {
+  margin-right: 0.5rem;
+}
+
+.program-overview p,
+.assessment p {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 350;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.objectives, .performance-measurement {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  width: 60%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  background-color: rgb(255, 255, 255);
+}
+
+.objectives-rect, .performance-measurement-rect {
+  display: flex;
+  margin-top: 1rem;
+  height: 50px;
+  width: 12px;
+  background-color: blueviolet;
+  flex-shrink: 0;
+}
+
+.objectives-text, .performance-measurement-text {
+  width: 84%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 2.5rem 0 2.5rem;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+.objectives-text h2, .performance-measurement-text h2 {
+  font-size: 22px;
+  color: blueviolet;
+  margin-bottom: -0.25rem;
+}
+
+.objectives-text ul, .performance-measurement-text ul {
+  list-style: none;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 350;
+  line-height: 25px;
+  font-size: 14px;
+  color: gray;
+}
+
+.objectives-text li::before, .performance-measurement-text li::before {
+  content: '■'; 
+  font-size: 1.5em;
+  color: blueviolet;
+  margin-right: 0.2em; 
+}
+
+.cv__navbar-heading_square {
+  flex-shrink: 0;
+  margin-right: 0.5rem;
 }
